@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/media_queries.css" />
     <link rel="stylesheet" href="css/custom.css" />
 
-    <title>Cricket for kids!</title>
+    <title>Cricket for kids! Login page</title>
 </head>
 
 <body>
@@ -56,47 +56,71 @@
     <div class="container-fluid">
         <header>
             <div class="row justify-content-center">
-                <div class="col-md-6 font-italic">
+                <div class="font-italic">
                     <h1><img src="img/common/bat_icon.jpg" alt="bat icon">Kids & Cricket</h1>
                 </div>
             </div>
         </header>
-
         <!-- Content - Vision of the website-->
-
         <main>
-            <div class="row">
-                <div class="col-sm-4 offset-sm-4">
-                    <h2 class="center">Welcome</h2>
-                    <!-- fonthandler to resize based on device size-->
-                    <p class="text-align-center fonthandler"> Cricket is the second largest sport in the world.
-                        <br /> Take care of kids future and health by clicking
-                        <br />
-                        <a class="btn btn-primary float-right" href="login.html">Get Started</a></p>
-                </div>
+            <div class="row justify-content-center">
+                <!-- form action has post due to PII elements-->
+                <form action="selection.html" class="form-signin" method="POST">
+                    <!-- label is shown only on large screens with bootstrap attributes  
+                         label and input is designed to show on the same screen 
+                    Username is set to be default type-in upon loading the page and required fields-->
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-3 d-none d-md-block" for="inputUsername">UserName:</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="inputUsername" class="form-control " placeholder="User Name" required autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-3 d-none d-md-block" for="inputPassword">Password:</label>
+                        <div class="col-sm-9">
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="rembcheck1">
+                        <label class="form-check-label" for="rembcheck1">Remember me</label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    <!-- copyright to author-->
+                    <p class="mt-5 mb-3 text-muted ">&copy; Suriya</p>
+                    <!-- No account, redirect to register page below -->
+                    <section>
+                        <h4>Don't have an account yet?</h4>
+                        <p><small>An account is required to use this site so we <br /> are able to differentiate user data.</small></p>
+                        <a class="btn btn-secondary btn-sm float-right " href="register.html ">Register</a>
+                    </section>
+                    <!-- password reset page is added here to show the option. it is extra page -->
+                    <a class="btn btn-sm btn-light mb-2 col-sm-5" href="pwd_reset.htmlsubmit">Forgot password ?</a>
+                </form>
+
             </div>
         </main>
-
+        <!-- horizontal marker to differentiate the footer section-->
         <hr />
 
-        <footer class="footer">
+        <footer class="footer ">
             <!-- Start of footer -->
             <!-- links to ICC cricket guidelines and credit page-->
 
-            <div class="row">
+            <div class="row ">
                 <br />
-                <p class="text-left small"><a href="https://www.icc-cricket.com/about/cricket/rules-and-regulations/playing-conditions" target="_blank">ICC cricket rules and regulations</a></p>
+                <p class="text-left small"><a href="https://www.icc-cricket.com/about/cricket/rules-and-regulations/playing-conditions " target="_blank">ICC cricket rules and regulations</a></p>
                 <hr />
-                <p class="text-right small"><a href="https://www.icc-cricket.com/about" target=_blank>&copy;icc</a></p>
+                <p class="text-right small"><a href="https://www.icc-cricket.com/about " target=_blank>&copy;icc</a></p>
             </div>
-            <div class="row justify-content-center">
-                <h5 class="display-5">Follow <span class="font-italic font-weight-bold">Cricket4Kids</span> On social</h5>
+            <div class="row justify-content-center ">
+                <h5 class="display-5 ">Follow <span class="font-italic font-weight-bold ">Cricket4Kids</span> On social</h5>
             </div>
 
             <!--  links to cricket4world social sites-->
 
             <div class="row justify-content-center">
-                <ul class="d-flex flex-row list-unstyled">
+                <ul class="d-flex flex-row list-unstyled ">
                     <li>
                         <a href="https://www.facebook.com/cricketworldcup/ " target="facebook"><img src="img/common/facebook.png " alt="facebook ">
                         </a>
