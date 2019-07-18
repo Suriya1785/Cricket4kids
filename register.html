@@ -73,22 +73,22 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label class="col-form-label col-sm-3 d-none d-md-block" for="inputFirstname">FirstName:</label>
-                            <input type="text" id="inputFirstname" class="form-control" placeholder="First Name" required autofocus>
+                            <input type="text" id="inputFirstname" name="inputFirstname" class="form-control" placeholder="First Name" required autofocus>
                         </div>
                         <div class="form-group col-md-6">
                             <label class="col-form-label col-sm-3 d-none d-md-block" for="inputLastname">LastName:</label>
-                            <input type="text" id="inputLastname" class="form-control" placeholder="Last Name" required>
+                            <input type="text" id="inputLastname" name="inputLastname" class="form-control" placeholder="Last Name" required>
                         </div>
                     </div>
                     <!-- usage of placeholder attribute for small/medium screen usage-->
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label class="col-form-label col-sm-3 d-none d-md-block" for="inputUsername">UserName:</label>
-                            <input type="text" id="inputUsername" class="form-control" placeholder="User Name" required>
+                            <input type="text" id="inputUsername" name="inputUsername" class="form-control" placeholder="User Name" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label class="col-form-label col-sm-3 d-none d-md-block" for="inputPassword">Password:</label>
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                            <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required>
                         </div>
                     </div>
                     <!-- Usage of font awesome attribute for calendar check -->
@@ -96,7 +96,7 @@
                     <div class="form-group">
                         <label for="dobinput" class="col-form-label d-none d-md-block">Date Of Birth</label>
                         <div class="input-group">
-                            <input class="form-control" type="date" id="dobinput" required>
+                            <input class="form-control" type="date" name="dobinput" id="dobinput" required>
                             <div class="input-group-append">
                                 <span class="input-group-text">
                                             <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
@@ -107,46 +107,43 @@
                     <!-- Collect Address of the user-->
                     <div class="form-group">
                         <label class="d-none d-md-block" for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="39 Main St" required>
+                        <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="39 Main St" required>
                     </div>
                     <div class="form-group">
                         <label class="d-none d-md-block" for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        <input type="text" class="form-control" id="inputAddress2" name="inputAddress2" placeholder="Apartment, studio, or floor">
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label class="d-none d-md-block" for="inputCity">City</label>
-                            <input type="text" class="form-control" placeholder="Manchester" id="inputCity" required>
+                            <input type="text" class="form-control" placeholder="Manchester" id="inputCity" name="inputCity" required>
                         </div>
                         <div class="form-group col-md-3">
                             <label class="d-none d-md-block" for="inputState">State</label>
                             <select name="inputState" id="inputState" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>AK</option>
-                                <option>AL</option>
-                                <option>CT</option>
-                                <option>...</option>
+                                <option value="">Choose...</option>
+                                <option value="AK">AK</option>
+                                <option value="AL">AL</option>
+                                <option value="CT">CT</option>
+                                <option value="...">...</option>
                               </select>
                         </div>
                         <div class="form-group col-md-3">
                             <label class="d-none d-md-block" for="inputZip">Zip</label>
-                            <input type="text" pattern="(\d{5}([\-]\d{4})?)" class="form-control" id="inputZip" placeholder="99999-1234" required>
+                            <input type="text" pattern="(\d{5}([\-]\d{4})?)" class="form-control" id="inputZip" name="inputZip" placeholder="99999-1234" required>
                         </div>
                     </div>
                     <!-- Attributes set to collect below information only in large screens-->
                     <section class="d-none d-md-block">
                         <h4>How did you hear about us?</h4>
                         <br />
-                        <div class="input-group">
+                        <div class="form-check form-check-inline">
                             <label class="form-check-label" for="inputFrnd"></label>
-                            <input class="form-check-input form-control" type="radio" id="inputFrnd" value="Friend">Friend
-
+                            <input class="form-check-input form-control" type="radio" id="inputFrnd" name="inputFrnd">Friend
                             <label class="form-check-label" for="inputInternet"></label>
-                            <input class="form-check-input form-control" type="radio" id="inputInternet">Internet Search
-
-
+                            <input class="form-check-input form-control" type="radio" id="inputInternet" name="inputInternet">Internet Search
                             <label class="form-check-label" for="inputOther"></label>
-                            <input class="form-check-input form-control" type="radio" id="inputOther">Other
+                            <input class="form-check-input form-control" type="radio" id="inputOther" name="inputOther">Other
                         </div>
                     </section>
                     <br>
